@@ -1,0 +1,62 @@
+.\" Manpage for imagehelper.sh
+.\" Contact: Piotr Sulewki <s192594@pg.edu.pl>
+.\" Date: June 2023
+.\" Version: 1.0
+.\" 
+.TH IMAGEHELPER.SH 1 "June 2023" "1.0" "imagehelper.sh Manual"
+
+.SH NAME
+imagehelper.sh \- Tool for processing graphic files
+
+.SH SYNOPSIS
+.B imagehelper.sh
+[\fIOPTIONS\fR]
+
+.SH DESCRIPTION
+.B imagehelper.sh
+is a Bash script that allows you to process graphic files using the ImageMagick tool. The program provides functionalities such as format conversion, resizing, adding watermarks, adjusting brightness, adjusting contrast, and converting to grayscale.
+
+.SH OPTIONS
+.TP
+.B -h
+Opens the manual for the script.
+
+.TP
+.B -s <height>
+Changes the height of the dialog window to <height> pixels.
+
+.SH USAGE
+.PP
+.nr step 1 1
+.IP \n[step]
+Running the program:
+Open a terminal and enter: \fB./imagehelper.sh\fR
+
+.IP \n+[step] 
+Selecting an operation:
+The program will display a dialog window with a list of available operations. Select one of the options by clicking on it.
+
+.IP \n+[step] 
+Choosing files:
+The program will display a file selection dialog window. Choose file to process.
+
+.IP \n+[step]
+Performing the operation:
+After selecting the operation and file, the program will process the selected file according to the chosen operation. The resulting file will be saved in the same directory as the original file with appropriate changes in the filename.
+
+.IP \n+[step]
+Previewing processed file:
+After the processing is completed, the program will open a preview of the processed file using the default image viewer on your system.
+
+.IP \n+[step]
+Exiting the program:
+You can choose another operation or close the program.
+
+.SH SEE ALSO
+ImageMagick documentation: https://imagemagick.org/script/command-line-tools.php
+
+.SH BUGS
+If you encounter any bugs or issues, please report them to my e-mail 
+.I <s192594@pg.edu.pl>
+.SH AUTHOR
+Piotr Sulewski <s192594@pg.edu.pl>
